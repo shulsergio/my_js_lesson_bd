@@ -1,0 +1,101 @@
+/* --- обнуление стилей 
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100% auto;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+}
+---закончили обнуление */
+
+body {
+    background: white;
+    width: 1200px;
+  /* margin: 0; */
+    margin: 20px 20px 20px 20px;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #4cc4cc;
+}
+
+.main-header{
+    width: 500px;
+    height: 50px;
+}
+
+.main-header p {
+        text-align: center;
+padding: 0 0 0 20px;
+    margin: 0px;
+        font: 1em sans-serif ;
+        color: whitesmoke;
+        font-size: 200%;
+}
+
+.container {
+background-color: #fff;
+display: grid;
+grid-template-columns: repeat(auto-fill, 390px);
+grid-template-rows: 300px 300px;
+grid-gap: 10px;
+justify-content: center;
+}
+
+.box-1 {
+    /* width: 45%;
+        height: 250px; */
+    padding: 0 0 0 16px;
+    background-color: #f1f1f1;
+}
+
+#Butt1Box1 {
+ border: 2px solid rgb(0, 255, 225);
+ position: relative;
+ overflow: hidden;
+}
+#Butt1Box1:hover {
+ box-shadow: 1px 1px 5px 5px rgba(0, 255, 225, 0.4);
+}
+
+.box-2 {
+    /* width: 45%;
+        height: 250px; */
+        padding: 0 0 0 16px;
+
+        background-color: #f1f1f1;
+}
+
+.box-3 {
+    /* width: 45%;
+        height: 250px; */
+        padding: 0 0 0 16px;
+
+        background-color: #f1f1f1;
+}
+
+.box-4 {
+    /* width: 45%;
+    height: 250px; */
+    padding: 0 0 0 16px;
+    background-color: #f1f1f1;
+}
+ 

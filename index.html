@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="main-header">
+        <p>Мои заметки</p>
+      </div>
+    </div>
+
+    <!-- box1 -->
+    <div class="container">
+      <div class="box-1">
+        <h2>Математика</h2>
+        <p>Первое число</p>
+        <input type="text" id="count1-box1" placeholder="first count" />
+        <p>Второе число</p>
+        <input type="text" id="count2-box1" placeholder="second count" />
+        <input type="button" id="Butt1Box1" value="Умножить" />
+        <div id="result-box1"></div>
+      </div>
+      <!-- end box1 -->
+      <!-- box2 -->
+
+      <div class="box-2">
+        <h2>Кнопки</h2>
+        <p id="para">BOX 2</p>
+        <input type="button" id="ButtColourBox2" value="Colour" />
+        <input type="button" id="ButtHideBox2" value="Hidden" />
+      </div>
+
+      <!-- end box2 -->
+      <!--  box3 -->
+      <div class="box-3">
+        <h2>Обмен валют</h2>
+        <p>курс бакса 40.0</p>
+        <div class="block1-box3">
+          <p>Вы отдаете</p>
+          <input type="text" id="input1-box3" placeholder="0" value="0" />
+          <span id="currency-type1">UAH</span>
+        </div>
+        <input type="button" id="ButtValBox3" value="Замена <>" />
+        <div class="block2-box3">
+          <p>Вы получаете</p>
+          <input type="text" id="input2-box3" placeholder="0" value="0" />
+          <span id="currency-type2">USD</span>
+        </div>
+        <input type="button" id="ButtChangeBox3" value="считать" />
+      </div>
+
+      <!-- end box3 -->
+
+      <!-- box4 -->
+      <div class="box-4">
+        <h2>Задача лестницы</h2>
+        <h3>
+          вводим число ступенек и считаем за сколько минимум и максимум раз
+          можно их пройти
+        </h3>
+
+        <form action="#">
+          <p>Введите количество ступенек</p>
+          <input type="text" id="text-box4" placeholder="0" />
+          <button class="button-box4" onclick="ButtValBox4();" type="submit">
+            Считать
+          </button>
+          <p class="result-box4"></p>
+        </form>
+      </div>
+      <!-- end box4 -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
