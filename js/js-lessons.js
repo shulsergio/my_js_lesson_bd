@@ -1,5 +1,5 @@
 // примері работі - все через консоль лог
-
+console.log("lessons");
 // --------------
 // Напиши функцію isEnoughCapacity(products, containerSize), яка обчислює, чи помістяться всі товари в контейнер при пакуванні.
 // Функція оголошує два параметри:
@@ -76,5 +76,12 @@
 // console.log(profile.getInfo()); // "Marco has 300 active hours!"
 // profile.updatePlayTime(20);
 // console.log(profile.getInfo()); // "Marco has 320 active hours!"
+// --------------
+// --------------
+// Доповни код так, щоб у змінній evenNumbers був масив парних чисел із масиву numbers, а у змінній oddNumbers — масив непарних.
+// ---- filter ----------
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// const evenNumbers = numbers.filter((number) => number % 2 == 0);
+// const oddNumbers = numbers.filter((number) => number % 2 !== 0);
 // --------------
 // --------------
