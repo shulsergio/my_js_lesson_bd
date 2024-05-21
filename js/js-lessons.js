@@ -24,6 +24,12 @@ console.log("lessons");
 // --------------
 // Напиши функцію calcAverageCalories(days), яка повертає середньодобове значення кількості калорій, які спортсмен споживав протягом тижня. Функція очікує один параметр: days — масив об’єктів. Кожен об’єкт описує день тижня та кількість калорій calories, спожитих спортсменом, у цей день. Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її викликів.
 // --------------
+// /**
+//  *
+//  *
+//  * @param {*} days
+//  * @return {*}
+//  */
 // function calcAverageCalories(days) {
 //   if (days.length === 0) {
 //     return 0;
@@ -120,6 +126,62 @@ console.log("lessons");
 // console.log(names);
 // --------------
 // --------------
+// Напиши стрілочну функцію getTotalBalanceByGender(users, gender), яка прийматиме два параметра:
+
+// перший параметр users — масив об’єктів користувачів,
+// другий параметр gender — рядок, що зберігає стать.
+// Функція має використовувати ланцюжок виклику методів та повертати загальний баланс користувачів (властивість balance), стать яких (властивість gender) збігається зі значенням параметра gender.
+
+// Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
+// -------------------
+// const getTotalBalanceByGender = (users, gender) => {
+//   return users
+//     .filter((user) => user.gender === gender)
+//     .reduce((acc, user) => acc + user.balance, 0);
+// };
+
+// const clients = [
+//   {
+//     name: "Moore Hensley",
+//     gender: "male",
+//     balance: 2811,
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     gender: "female",
+//     balance: 3821,
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     gender: "male",
+//     balance: 3793,
+//   },
+//   {
+//     name: "Elma Head",
+//     gender: "female",
+//     balance: 2278,
+//   },
+//   {
+//     name: "Carey Barr",
+//     gender: "male",
+//     balance: 3951,
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     gender: "male",
+//     balance: 1498,
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     gender: "female",
+//     balance: 2764,
+//   },
+// ];
+
+// console.log(getTotalBalanceByGender(clients, "male")); // 12053
+
+// console.log(getTotalBalanceByGender(clients, "female")); // 8863
+
 // --------------
 // --------------
 // ЗАДАЧА 1
@@ -169,3 +231,14 @@ console.log("lessons");
 // calculator.read();
 // console.log(`sum`, calculator.sum());
 // console.log(`mult`, calculator.mult());
+// --------------
+// --------------
+import { presidents, writers } from "./js-lessons-const";
+console.log(presidents);
+// const aveYearsPresident = (presidents) => {
+//   let averPres = 0;
+//   averPres = presidents.map((president) => {
+//     averPres += president.died - president.born;
+//   });
+//   return averPres / presidents.length;
+// };
