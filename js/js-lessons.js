@@ -233,12 +233,616 @@ console.log("lessons");
 // console.log(`mult`, calculator.mult());
 // --------------
 // --------------
-import { presidents, writers } from "./js-lessons-const";
+
+const presidents = [
+  {
+    first: "George",
+    last: "Washington",
+    bornData: 1732,
+    diedData: 1799,
+    startPresData: 1789,
+    endPresData: 1797,
+    presNumber: 1,
+    presParty: "None",
+  },
+  {
+    first: "John",
+    last: "Adams",
+    bornData: 1735,
+    diedData: 1826,
+    startPresData: 1797,
+    endPresData: 1801,
+    presNumber: 2,
+    presParty: "Federalist",
+  },
+  {
+    first: "Thomas",
+    last: "Jefferson",
+    bornData: 1743,
+    diedData: 1826,
+    startPresData: 1801,
+    endPresData: 1809,
+    presNumber: 3,
+    presParty: "Democratic-Republican",
+  },
+  {
+    first: "James",
+    last: "Madison",
+    bornData: 1751,
+    diedData: 1836,
+    startPresData: 1809,
+    endPresData: 1817,
+    presNumber: 4,
+    presParty: "Democratic-Republican",
+  },
+  {
+    first: "James",
+    last: "Monroe",
+    bornData: 1758,
+    diedData: 1831,
+    startPresData: 1817,
+    endPresData: 1825,
+    presNumber: 5,
+    presParty: "Democratic-Republican",
+  },
+  {
+    first: "John Quincy",
+    last: "Adams",
+    bornData: 1767,
+    diedData: 1848,
+    startPresData: 1825,
+    endPresData: 1829,
+    presNumber: 6,
+    presParty: "Democratic-Republican",
+  },
+  {
+    first: "Andrew",
+    last: "Jackson",
+    bornData: 1767,
+    diedData: 1845,
+    startPresData: 1829,
+    endPresData: 1837,
+    presNumber: 7,
+    presParty: "Democratic",
+  },
+  {
+    first: "Martin",
+    last: "Van Buren",
+    bornData: 1782,
+    diedData: 1862,
+    startPresData: 1837,
+    endPresData: 1841,
+    presNumber: 8,
+    presParty: "Democratic",
+  },
+  {
+    first: "William Henry",
+    last: "Harrison",
+    bornData: 1773,
+    diedData: 1841,
+    startPresData: 1841,
+    endPresData: 1841,
+    presNumber: 9,
+    presParty: "Whig",
+  },
+  {
+    first: "John",
+    last: "Tyler",
+    bornData: 1790,
+    diedData: 1862,
+    startPresData: 1841,
+    endPresData: 1845,
+    presNumber: 10,
+    presParty: "Whig",
+  },
+  {
+    first: "James",
+    last: "Polk",
+    bornData: 1795,
+    diedData: 1849,
+    startPresData: 1845,
+    endPresData: 1849,
+    presNumber: 11,
+    presParty: "Democratic",
+  },
+  {
+    first: "Zachary",
+    last: "Taylor",
+    bornData: 1784,
+    diedData: 1850,
+    startPresData: 1849,
+    endPresData: 1850,
+    presNumber: 12,
+    presParty: "Whig",
+  },
+  {
+    first: "Millard",
+    last: "Fillmore",
+    bornData: 1800,
+    diedData: 1874,
+    startPresData: 1850,
+    endPresData: 1853,
+    presNumber: 13,
+    presParty: "Whig",
+  },
+  {
+    first: "Franklin",
+    last: "Pierce",
+    bornData: 1804,
+    diedData: 1869,
+    startPresData: 1853,
+    endPresData: 1857,
+    presNumber: 14,
+    presParty: "Democratic",
+  },
+  {
+    first: "James",
+    last: "Buchanan",
+    bornData: 1791,
+    diedData: 1868,
+    startPresData: 1857,
+    endPresData: 1861,
+    presNumber: 15,
+    presParty: "Democratic",
+  },
+  {
+    first: "Abraham",
+    last: "Lincoln",
+    bornData: 1809,
+    diedData: 1865,
+    startPresData: 1861,
+    endPresData: 1865,
+    presNumber: 16,
+    presParty: "Republican",
+  },
+  {
+    first: "Andrew",
+    last: "Johnson",
+    bornData: 1808,
+    diedData: 1875,
+    startPresData: 1865,
+    endPresData: 1869,
+    presNumber: 17,
+    presParty: "National Union",
+  },
+  {
+    first: "Ulysses S.",
+    last: "Grant",
+    bornData: 1822,
+    diedData: 1885,
+    startPresData: 1869,
+    endPresData: 1877,
+    presNumber: 18,
+    presParty: "Republican",
+  },
+  {
+    first: "Rutherford B.",
+    last: "Hayes",
+    bornData: 1822,
+    diedData: 1893,
+    startPresData: 1877,
+    endPresData: 1881,
+    presNumber: 19,
+    presParty: "Republican",
+  },
+  {
+    first: "James A.",
+    last: "Garfield",
+    bornData: 1831,
+    diedData: 1881,
+    startPresData: 1881,
+    endPresData: 1881,
+    presNumber: 20,
+    presParty: "Republican",
+  },
+  {
+    first: "Chester A.",
+    last: "Arthur",
+    bornData: 1829,
+    diedData: 1886,
+    startPresData: 1881,
+    endPresData: 1885,
+    presNumber: 21,
+    presParty: "Republican",
+  },
+  {
+    first: "Grover",
+    last: "Cleveland",
+    bornData: 1837,
+    diedData: 1908,
+    startPresData: 1885,
+    endPresData: 1889,
+    presNumber: 22,
+    presParty: "Democratic",
+  },
+  {
+    first: "Benjamin",
+    last: "Harrison",
+    bornData: 1833,
+    diedData: 1901,
+    startPresData: 1889,
+    endPresData: 1893,
+    presNumber: 23,
+    presParty: "Republican",
+  },
+  {
+    first: "Grover",
+    last: "Cleveland",
+    bornData: 1837,
+    diedData: 1908,
+    startPresData: 1893,
+    endPresData: 1897,
+    presNumber: 24,
+    presParty: "Democratic",
+  },
+  {
+    first: "William",
+    last: "McKinley",
+    bornData: 1843,
+    diedData: 1901,
+    startPresData: 1897,
+    endPresData: 1901,
+    presNumber: 25,
+    presParty: "Republican",
+  },
+  {
+    first: "Theodore",
+    last: "Roosevelt",
+    bornData: 1858,
+    diedData: 1919,
+    startPresData: 1901,
+    endPresData: 1909,
+    presNumber: 26,
+    presParty: "Republican",
+  },
+  {
+    first: "William Howard",
+    last: "Taft",
+    bornData: 1857,
+    diedData: 1930,
+    startPresData: 1909,
+    endPresData: 1913,
+    presNumber: 27,
+    presParty: "Republican",
+  },
+  {
+    first: "Woodrow",
+    last: "Wilson",
+    bornData: 1856,
+    diedData: 1924,
+    startPresData: 1913,
+    endPresData: 1921,
+    presNumber: 28,
+    presParty: "Democratic",
+  },
+  {
+    first: "Warren G.",
+    last: "Harding",
+    bornData: 1865,
+    diedData: 1923,
+    startPresData: 1921,
+    endPresData: 1923,
+    presNumber: 29,
+    presParty: "Republican",
+  },
+  {
+    first: "Calvin",
+    last: "Coolidge",
+    bornData: 1872,
+    diedData: 1933,
+    startPresData: 1923,
+    endPresData: 1929,
+    presNumber: 30,
+    presParty: "Republican",
+  },
+  {
+    first: "Herbert",
+    last: "Hoover",
+    bornData: 1874,
+    diedData: 1964,
+    startPresData: 1929,
+    endPresData: 1933,
+    presNumber: 31,
+    presParty: "Republican",
+  },
+  {
+    first: "Franklin D.",
+    last: "Roosevelt",
+    bornData: 1882,
+    diedData: 1945,
+    startPresData: 1933,
+    endPresData: 1945,
+    presNumber: 32,
+    presParty: "Democratic",
+  },
+  {
+    first: "Harry S.",
+    last: "Truman",
+    bornData: 1884,
+    diedData: 1972,
+    startPresData: 1945,
+    endPresData: 1953,
+    presNumber: 33,
+    presParty: "Democratic",
+  },
+  {
+    first: "Dwight D.",
+    last: "Eisenhower",
+    bornData: 1890,
+    diedData: 1969,
+    startPresData: 1953,
+    endPresData: 1961,
+    presNumber: 34,
+    presParty: "Republican",
+  },
+  {
+    first: "John F.",
+    last: "Kennedy",
+    bornData: 1917,
+    diedData: 1963,
+    startPresData: 1961,
+    endPresData: 1963,
+    presNumber: 35,
+    presParty: "Democratic",
+  },
+  {
+    first: "Lyndon B.",
+    last: "Johnson",
+    bornData: 1908,
+    diedData: 1973,
+    startPresData: 1963,
+    endPresData: 1969,
+    presNumber: 36,
+    presParty: "Democratic",
+  },
+  {
+    first: "Richard",
+    last: "Nixon",
+    bornData: 1913,
+    diedData: 1994,
+    startPresData: 1969,
+    endPresData: 1974,
+    presNumber: 37,
+    presParty: "Republican",
+  },
+  {
+    first: "Gerald",
+    last: "Ford",
+    bornData: 1913,
+    diedData: 2006,
+    startPresData: 1974,
+    endPresData: 1977,
+    presNumber: 38,
+    presParty: "Republican",
+  },
+  {
+    first: "Jimmy",
+    last: "Carter",
+    bornData: 1924,
+    diedData: new Date().getFullYear(), //жив
+    startPresData: 1977,
+    endPresData: 1981,
+    presNumber: 39,
+    presParty: "Democratic",
+  },
+  {
+    first: "Ronald",
+    last: "Reagan",
+    bornData: 1911,
+    diedData: 2004,
+    startPresData: 1981,
+    endPresData: 1989,
+    presNumber: 40,
+    presParty: "Republican",
+  },
+  {
+    first: "George H. W.",
+    last: "Bush",
+    bornData: 1924,
+    diedData: 2018,
+    startPresData: 1989,
+    endPresData: 1993,
+    presNumber: 41,
+    presParty: "Republican",
+  },
+  {
+    first: "Bill",
+    last: "Clinton",
+    bornData: 1946,
+    diedData: new Date().getFullYear(), //жив
+    startPresData: 1993,
+    endPresData: 2001,
+    presNumber: 42,
+    presParty: "Democratic",
+  },
+  {
+    first: "George W.",
+    last: "Bush",
+    bornData: 1946,
+    diedData: new Date().getFullYear(), //жив
+    startPresData: 2001,
+    endPresData: 2009,
+    presNumber: 43,
+    presParty: "Republican",
+  },
+  {
+    first: "Barack",
+    last: "Obama",
+    bornData: 1961,
+    diedData: new Date().getFullYear(), //жив
+    startPresData: 2009,
+    endPresData: 2017,
+    presNumber: 44,
+    presParty: "Democratic",
+  },
+  {
+    first: "Donald",
+    last: "Trump",
+    bornData: 1946,
+    diedData: new Date().getFullYear(), //жив
+    startPresData: 2017,
+    endPresData: 2021,
+    presNumber: 45,
+    presParty: "Republican",
+  },
+  {
+    first: "Joe",
+    last: "Biden",
+    bornData: 1942,
+    diedData: new Date().getFullYear(), //жив
+    startPresData: 2021,
+    endPresData: new Date().getFullYear(), //жив
+    presNumber: 46,
+    presParty: "Democratic",
+  },
+];
+
+// ----------------------
 console.log(presidents);
-// const aveYearsPresident = (presidents) => {
-//   let averPres = 0;
-//   averPres = presidents.map((president) => {
-//     averPres += president.died - president.born;
-//   });
-//   return averPres / presidents.length;
-// };
+// сортировка по году рождения президентов
+function sortByYearsBorn(array) {
+  const newArray = array.toSorted((a, b) => a.bornData - a.bornData);
+  return newArray;
+}
+// -------
+//
+/**
+ *средняя продолжительность жизни
+ * @return {*} в консоле функция со средним возрастом президентов
+ */
+const aveYearsPresident = (array) => {
+  let a = 0;
+
+  a = array.reduce((acc, item) => {
+    return acc + (item.diedData - item.bornData);
+  }, 0);
+  //   console.log("всего проссумировали ", a);
+
+  return a / array.length;
+};
+console.log(
+  `средний возраст ${presidents.length} президентов США- 
+  ${aveYearsPresident(presidents)}`
+);
+/**
+ * фильтр президентов которые родились между заданным промежутком годов
+ * @param {*} arr принимает массив с рождениями
+ * @param {*} bornMin минимальный год
+ * @param {*} bornMax максимальный год
+ */
+const bornIn = (arr, bornMin, bornMax) => {
+  const newArr = arr.filter(
+    (item) => item.bornData < bornMax && item.bornData >= bornMin
+  );
+  console.log(`Выбранные президенты США с ${bornMin} по ${bornMax} по номерам`);
+  console.log(newArr);
+  console.log(
+    `средний возраст выбранных ${
+      newArr.length
+    } президентов США- ${aveYearsPresident(newArr)}`
+  );
+  return newArr;
+};
+bornIn(presidents, 1700, 1900);
+
+// процент партий президентов
+function percentParty(array) {
+  let massiv = array.map((arr) => arr.presParty);
+  console.log(massiv);
+
+  return massiv.reduce((acc, item) => {
+    if (item in acc) {
+      acc[item] += 1;
+    } else {
+      acc[item] = 1;
+    }
+    return acc;
+  }, {});
+}
+
+console.log("party");
+console.log(percentParty(presidents));
+
+// #1
+// Сделайте калькулятор, который будет находить площадь и периметр квадрата.
+console.log("задача 1");
+function calc(data) {
+  console.log(
+    `площадь квардарта со стороной ${data} - ${data * data}, а периметр - ${
+      data * 4
+    }`
+  );
+}
+calc(23);
+
+// #2
+// Даны 2 инпута и кнопка. В инпуты вводятся числа. По нажатию на кнопку выведите наибольший общий делитель этих двух чисел.
+console.log("задача 2");
+function Delitel(numA, numB) {
+  let delitel = numA < numB ? numA : numB;
+
+  for (let i = delitel; i > 0; i--) {
+    if (numA % i === 0 && numB % i === 0) {
+      console.log(`наибольший делитель - ${i}`);
+      break;
+    }
+  }
+}
+Delitel(18456, 448935);
+
+// #3
+// Даны 2 инпута и кнопка. В инпуты вводятся числа. По нажатию на кнопку выведите наименьшее число, которое делится и на одно, и на второе из введенных чисел.
+console.log("задача 3");
+function delimoe(numA, numB) {
+  let delitel = numA < numB ? numB : numA;
+  for (let i = delitel; i < delitel * 100; i++) {
+    if (i % numA === 0 && i % numB === 0) {
+      console.log(`наименьшее число - ${i}`);
+      break;
+    }
+  }
+}
+delimoe(5, 12);
+
+// #4
+// Если задано число n, вернуть количество положительных нечетных чисел меньше n
+console.log("задача 4");
+function nechet(numb) {
+  let nechNum = [];
+  for (let i = numb - 1; i > 0; i--) {
+    if (i % 2 === 1) {
+      nechNum.push(i);
+    }
+  }
+  console.log("количество положительных нечетных чисел-", nechNum.length);
+}
+nechet(7);
+
+// #5
+// Создать массив, который будет содержать только уникальные значения исходного массива:
+// const fruits = ["Apple", "Banana", "Grapes", "Apple", "Apple", "Banana", "Pineapple", "Grapes", "Kiwi", "Apple"];
+console.log("задача 5");
+function UniqArr() {
+  const fruits = [
+    "Apple",
+    "Banana",
+    "Grapes",
+    "Apple",
+    "Orange",
+    "Mango",
+    "Kiwi",
+    "Pineapple",
+    "Grapes",
+    "Kiwi",
+    "Apple",
+  ];
+
+  const newArr = fruits.reduce((acc, fruit) => {
+    acc[fruit] = 1;
+    return acc;
+  }, {});
+
+  const newMass = Object.keys(newArr);
+  console.log(newMass);
+}
+UniqArr();
