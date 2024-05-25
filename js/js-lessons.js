@@ -750,7 +750,7 @@ function percentParty(array) {
   let massiv = array.map((arr) => arr.presParty);
   console.log(massiv);
 
-  return massiv.reduce((acc, item) => {
+  const newArr = massiv.reduce((acc, item) => {
     if (item in acc) {
       acc[item] += 1;
     } else {
@@ -758,11 +758,21 @@ function percentParty(array) {
     }
     return acc;
   }, {});
+  console.log(newArr);
+  const addObjMass = Object.entries(newArr);
+  console.log(addObjMass);
+  const percent = 0;
+  const NewData = addObjMass.map(([party, count], percent) => {
+    {
+      party, count, percent;
+    }
+  });
+  console.log(NewData);
 }
 
 console.log("party");
-console.log(percentParty(presidents));
-
+percentParty(presidents);
+console.log("процент партий президентов");
 // #1
 // Сделайте калькулятор, который будет находить площадь и периметр квадрата.
 console.log("задача 1");
