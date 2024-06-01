@@ -812,7 +812,7 @@ function delimoe(numA, numB) {
     }
   }
 }
-delimoe(5, 12);
+delimoe(18455, 448935);
 
 // #4
 // Если задано число n, вернуть количество положительных нечетных чисел меньше n
@@ -856,3 +856,13 @@ function UniqArr() {
   console.log(newMass);
 }
 UniqArr();
+console.log("---------- nen geyrn Utys");
+function inp(a, b) {
+  const result = [];
+  for (let i = 1; i <= a && i <= b; i += 1)
+    if (a % i === 0 && b % i === 0) {
+      result.push(i);
+    }
+  return result;
+}
+console.log(inp(20, 10));
